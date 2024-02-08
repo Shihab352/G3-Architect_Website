@@ -73,7 +73,7 @@ margin: 0 auto;
 /* main style */
 main{
     max-width: 1220px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* features style */
 .features-container{
@@ -110,9 +110,16 @@ main{
   header{
     padding: 20px;
   } 
-  nav{
+  nav,.features-container{
     flex-direction: column;
   } 
+  .team-pictures{
+    grid-template-columns: 1fr;
+  }
+  .features-content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
