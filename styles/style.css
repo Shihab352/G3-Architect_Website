@@ -35,6 +35,7 @@ nav {
 
 nav>ul {
     display: flex;
+   
 }
 
 nav li {
@@ -61,10 +62,30 @@ text-align: center;
 margin: 0 auto;
 }
 .banner img{
+    margin-top: 20px;
     width: 100%;
 }
 .banner-title{
     color: rgb(19, 19, 19);
     font-size: 4rem;
     font-weight: 700;
+}
+/* Responsive media queries */
+/* mobile devices */
+@media screen and (max-width:576px) {
+  header{
+    padding: 20px;
+  } 
+  nav{
+    flex-direction: column;
+  } 
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+      } 
+      nav{
+        flex-direction: column;
+      } 
 }
